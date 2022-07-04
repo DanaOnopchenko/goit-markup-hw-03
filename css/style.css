@@ -1,0 +1,213 @@
+/*  
+btn-bgr-color #2196F3 - accent;
+btn-hover-hero #188CE8   ;
+btn-portfolio: #F5F4FA -bg-grey;
+btn-portfolio-hover #2196F3 - accent
+*/
+/* font-family Roboto  900, 700, 500, 400
+logo-accent Raleway 700
+*/
+
+/* #ECECEC; */
+
+:root {
+  /* fonts */
+  --main-font: 'Roboto';
+  --secondary-font: 'Raleway';
+
+  /* text colors */
+  --primary-txt-color: #212121;
+  --secondary-txt-color: #757575;
+  --accent-color: #2196f3;
+  --white-main-color: #ffffff;
+  --white-secondary-color: rgba(255, 255, 255, 0.6);
+
+  /* background colors*/
+  --bg-color-grey: #f5f4fa;
+  --bg-color-black: #2f303a;
+
+  /* Other */
+  --logo-black: #000000;
+  --btn-hover-hero: #188ce8;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--primary-txt-color);
+}
+
+/* reset styles */
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/* Logo-header */
+
+.logo {
+  color: var(--logo-black);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+
+/*navigation*/
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+/* hover  focus */
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.current {
+  color: var(--accent-color);
+}
+
+/* auth-header */
+.header-phone,
+.header-email {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--secondary-txt-color);
+}
+/* hover  focus */
+.header-phone:hover,
+.header-email:hover,
+.header-phone:focus,
+.header-email:focus {
+  color: var(--accent-color);
+}
+
+/* hero section */
+.hero-section {
+  background-color: var(--bg-color-black);
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-main-color);
+}
+.hero-btn {
+  background-color: var(--accent-color);
+  color: var(--white-main-color);
+  font-family: inherit;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  background-color: var(--btn-hover-hero);
+}
+
+/* section feature*/
+.feature-subtitle {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.feature-desc {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-color);
+}
+/* services section */
+.title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* section team */
+.section-team {
+  background-color: var(--bg-color-grey);
+}
+.team-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+}
+.team-desc {
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-color);
+}
+
+/* footer */
+.footer {
+  background-color: var(--bg-color-black);
+}
+.footer-logo {
+  color: var(--white-main-color);
+}
+.footer-adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+.footer-desc {
+  color: var(--white-main-color);
+}
+.footer-email,
+.footer-phone {
+  color: var(--white-secondary-color);
+}
+.footer-email:hover,
+.footer-phone:hover,
+.footer-email:focus,
+.footer-phone:focus {
+  color: var(--accent-color);
+}
+
+/* page portfolio */
+.filter-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  color: var(--primary-txt-color);
+  background-color: var(--bg-color-grey);
+  cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
+}
+.portfolio-subtitle {
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+.portfolio-desc {
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
