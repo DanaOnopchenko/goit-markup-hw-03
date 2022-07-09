@@ -23,15 +23,13 @@
   <body>
     <!-- Header section-->
     <header class="header">
-      <div class="conteiner header-contenier">
-        <a class="logo link" href=""><span class="logo-accent">Web</span>Studio</a>
+      <div class="container header-container">
+        <a class="logo header-logo link" href=""><span class="logo-accent">Web</span>Studio</a>
         <!-- header navigation -->
         <nav class="header-nav">
           <ul class="list nav-list">
             <li class="nav-item"><a class="nav-link link" href="./index.html">Студия</a></li>
-            <li class="nav-item">
-              <a class="nav-link link current" href="./portfolio.html">Портфолио</a>
-            </li>
+            <li class="nav-item"><a class="nav-link link current" href="">Портфолио</a></li>
             <li class="nav-item"><a class="nav-link link" href="">Контакты</a></li>
           </ul>
         </nav>
@@ -49,9 +47,9 @@
     <!-- main section -->
     <main class="main">
       <!-- Portfolio section -->
-      <section class="section-portfolio">
-        <div class="conteiner">
-          <h1 hidden>Портфолио</h1>
+      <section class="section-portfolio section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
           <!-- Filter portfolio -->
           <ul class="list filter-list">
             <li class="filter-item">
@@ -74,8 +72,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-subtitle">Технокряк</h2>
-              <p class="portfolio-desc">Веб-сайт</p>
+              <div class="card-content">
+                <h2 class="portfolio-subtitle">Технокряк</h2>
+                <p class="portfolio-desc">Веб-сайт</p>
+              </div>
             </li>
 
             <li class="portfolio-item">
@@ -86,10 +86,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-subtitle">
-                Постер <span lang="en">New Orlean vs Golden Star </span>
-              </h2>
-              <p class="portfolio-desc">Дизайн</p>
+              <div class="card-content">
+                <h2 class="portfolio-subtitle">
+                  Постер <span lang="en">New Orlean vs Golden Star </span>
+                </h2>
+                <p class="portfolio-desc">Дизайн</p>
+              </div>
             </li>
 
             <li class="portfolio-item">
@@ -100,8 +102,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-subtitle">Ресторан <span lang="en">Seafood</span></h2>
-              <p class="portfolio-desc">Приложение</p>
+              <div class="card-content">
+                <h2 class="portfolio-subtitle">Ресторан <span lang="en">Seafood</span></h2>
+                <p class="portfolio-desc">Приложение</p>
+              </div>
             </li>
 
             <li class="portfolio-item">
@@ -112,8 +116,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-subtitle">Проект <span lang="en">Prime</span></h2>
-              <p class="portfolio-desc">Маркетинг</p>
+              <div class="card-content">
+                <h2 class="portfolio-subtitle">Проект <span lang="en">Prime</span></h2>
+                <p class="portfolio-desc">Маркетинг</p>
+              </div>
             </li>
 
             <li class="portfolio-item">
@@ -124,8 +130,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-subtitle">Проект <span>Boxes</span></h2>
-              <p class="portfolio-desc">Приложение</p>
+              <div class="card-content">
+                <h2 class="portfolio-subtitle">Проект <span>Boxes</span></h2>
+                <p class="portfolio-desc">Приложение</p>
+              </div>
             </li>
 
             <li class="portfolio-item">
@@ -136,8 +144,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-subtitle" lang="en">Inspiration has no Borders</h2>
-              <p class="portfolio-desc">Веб-сайт</p>
+              <div class="card-content">
+                <h2 class="portfolio-subtitle" lang="en">Inspiration has no Borders</h2>
+                <p class="portfolio-desc">Веб-сайт</p>
+              </div>
             </li>
 
             <li class="portfolio-item">
@@ -148,8 +158,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-subtitle">Издание <span lang="en">Limited Edition</span></h2>
-              <p class="portfolio-desc">Дизайн</p>
+              <div class="card-content">
+                <h2 class="portfolio-subtitle">Издание <span lang="en">Limited Edition</span></h2>
+                <p class="portfolio-desc">Дизайн</p>
+              </div>
             </li>
 
             <li class="portfolio-item">
@@ -160,8 +172,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-subtitle">Проект <span lang="en">LAB</span></h2>
-              <p class="portfolio-desc">Маркетинг</p>
+              <div class="card-content">
+                <h2 class="portfolio-subtitle">Проект <span lang="en">LAB</span></h2>
+                <p class="portfolio-desc">Маркетинг</p>
+              </div>
             </li>
 
             <li class="portfolio-item">
@@ -172,8 +186,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="portfolio-subtitle" lang="en">Growing Business</h2>
-              <p class="portfolio-desc">Приложение</p>
+              <div class="card-content">
+                <h2 class="portfolio-subtitle" lang="en">Growing Business</h2>
+                <p class="portfolio-desc">Приложение</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -181,11 +197,11 @@
     </main>
     <!-- footer section -->
     <footer class="footer">
-      <div class="conteiner">
-        <a class="link logo footer-logo" href="./index.html"
-          ><span class="logo-accent">Web</span>Studio</a
-        >
-        <address class="footer-adress">
+      <div class="container footer-container">
+        <a class="link logo footer-logo" href="./index.html">
+          <span class="logo-accent">Web</span>Studio
+        </a>
+        <address class="footer-address">
           <p class="footer-desc">г. Киев, пр-т Леси Украинки, 26</p>
           <ul class="list footer-list">
             <li class="footer-item">
