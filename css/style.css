@@ -17,6 +17,9 @@
   /* Other */
   --logo-black: #000000;
   --btn-hover-hero: #188ce8;
+  --indent: 30px;
+  --items: 3;
+  --border-color: #eeeeee;
 }
 
 body {
@@ -54,8 +57,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  /* outline: 2px solid red; */
 }
 
 .section {
@@ -198,7 +199,7 @@ img {
 
 .feature-list {
   display: flex;
-  gap: 30px;
+  gap: var(--indent);
 }
 .feature-items {
   width: 270px;
@@ -230,7 +231,7 @@ img {
 }
 .services-list {
   display: flex;
-  gap: 30px;
+  gap: var(--indent);
 }
 
 /* section team */
@@ -240,7 +241,7 @@ img {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: var(--indent);
 }
 
 .team-wrapper {
@@ -288,9 +289,7 @@ img {
   margin-bottom: 9px;
   color: var(--white-main-color);
 }
-/* .footer-list {
-  display: inline-block;
-} */
+
 .footer-email {
   display: inline-block;
   margin-bottom: 9px;
@@ -334,16 +333,18 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: var(--indent);
+}
+.portfolio-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 .card-content {
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border: 1px solid var(--border-color);
+  border-top: none;
 }
 .portfolio-subtitle {
   margin-bottom: 4px;
