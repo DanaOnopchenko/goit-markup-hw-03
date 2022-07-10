@@ -291,10 +291,7 @@ img {
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
-/* .footer-email {
-  display: inline-block;
-  
-} */
+
 .footer-email,
 .footer-phone {
   color: var(--white-secondary-color);
