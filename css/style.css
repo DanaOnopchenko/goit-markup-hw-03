@@ -118,12 +118,12 @@ img {
 /* auth-header */
 .header-auth {
   display: flex;
+  gap: var(--indent);
 }
-.header-email {
-  margin-right: 50px;
-}
+
 .header-phone,
 .header-email {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
